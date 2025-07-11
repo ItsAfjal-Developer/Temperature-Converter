@@ -1,0 +1,362 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: url("Image/Background.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(24, 1, 1);
+  font-weight: bold;
+  background: #6f96c3;
+  padding: 15px 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+body.dark .header {
+  background: rgba(30, 30, 30, 0.6);
+}
+
+body.dark .title {
+  color: white;
+}
+
+/* Container */
+.container {
+  width: 350px;
+  /* fixed width */
+  padding: 20px 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transform: scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  /* centers horizontally */
+  align-items: flex-start;
+  /* top align vertically */
+  gap: 30px;
+  /* space between converter and info box */
+  padding: 20px;
+  flex-wrap: wrap;
+  /* wrap on small screens */
+}
+
+.info-box {
+  width: 340px;
+  /* similar width for consistency */
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.info-box:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transform: scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.info-box p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* Output Message */
+#output-message {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+/* Input/Label/Button Styling */
+.input-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+label {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background-color: #becbdb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1a4478;
+  transform: scale(1.03);
+}
+
+/* Thermometer */
+.thermometer {
+  position: relative;
+  width: 150px;
+  /* wider instead of tall */
+  height: 30px;
+  /* shorter height */
+  margin: 20px auto;
+  border-radius: 30px;
+  background: #ccc;
+  box-shadow: inset 0 0 5px #999;
+  overflow: hidden;
+  transform: rotate(0deg);
+  /* keep flat */
+}
+
+.mercury {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  /* will animate this */
+  background: linear-gradient(to right, #f00, #ff6347);
+  transition: width 0.5s ease;
+  border-radius: 20px 0 0 20px;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Dark Mode */
+body.dark {
+  /* Keep background image, add a dark overlay */
+  background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)),
+    url("Image/Background.jpg") no-repeat center center/cover;
+  color: #eee;
+}
+
+body.dark .container {
+  background-color: rgba(30, 30, 30, 0.7);
+}
+
+body.dark input,
+body.dark button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+body.dark label {
+  color: #ddd;
+}
+
+body.dark #output-message {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #eee;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  animation: slideIn 0.6s ease-in-out;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+footer:hover {
+  transform: scale(1.02);
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.temp-images img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.temp-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.temp-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 25px 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input,
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container,
+  .info-box {
+    width: 90%;
+    /* almost full width on small screens */
+  }
+}

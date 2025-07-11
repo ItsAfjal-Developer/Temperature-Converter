@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="t2c.css" />
+    <link rel="shortcut icon" href="Image/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="title">
+            🌡️ <span>Temperature Converter</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="modeToggle" />
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <div class="main-container">
+        <!-- Converter Box -->
+        <main class="container">
+            <p id="output-message"></p>
+
+            <!-- Thermometer -->
+            <div class="thermometer">
+                <div class="mercury" id="mercury"></div>
+            </div>
+
+            <!-- Celsius to Fahrenheit -->
+            <div class="input-group">
+                <label for="celsius">Celsius:</label>
+                <input type="number" id="celsius" placeholder="Enter Celsius" />
+                <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+            </div>
+
+            <!-- Fahrenheit to Celsius -->
+            <div class="input-group">
+                <label for="fahrenheit">Fahrenheit:</label>
+                <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" />
+                <button onclick="convertToCelsius()">Convert to Celsius</button>
+            </div>
+        </main>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <h3>Temperature Units</h3><br>
+            <p><strong>🌡️ Celsius (°C):</strong> Celsius is a temperature scale where water freezes at 0 degrees and
+                boils at 100 degrees under normal atmospheric pressure.This scale provides a simple and intuitive way to
+                measure temperature,dividing the
+                range between freezing and boiling of water into 100 equal parts.</p>
+            <p><strong>🔥 Fahrenheit (°F):</strong> Used is a temperature scale primarily used in the United States. On
+                this scale, water freezes at 32 degrees and boils at 212 degrees.Though different from Celsius,
+                Fahrenheit remains widely used in daily
+                life for weather, cooking, and other practical purposes in countries that prefer it.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Temperature Visuals</h3>
+        <div class="temp-images">
+            <img src="Image/cold.jpg" alt="Cold" />
+            <img src="Image/mild.jpg" alt="Mild" />
+            <img src="Image/hot.jpg" alt="Hot" />
+        </div>
+        <br>
+        <p>&copy; 2025 Afjal's Converter</p>
+    </footer>
+
+    <script src="t2j.js"></script>
+</body>
+
+</html>
