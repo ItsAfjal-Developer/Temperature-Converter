@@ -1,6 +1,7 @@
-# **NA-Sport-s-Academy-Website**
-- **NA Sports Academy** is a Modern, Responsive Sports-themed Website that showcases various Sports Activities, Facilities and Events.  
-It is designed to provide users with an Engaging Experience, Featuring Clean Layouts, Attractive Visuals and Easy Navigation.
+# **Temperature Converter Web**
+- **Temperature Converter** is a modern, responsive web application that allows users to easily convert temperatures between **Celsius** and **Fahrenheit**.  
+The app also features a **light/dark mode toggle**, **visual feedback messages based on temperature**, and **temperature-related images** for an enhanced user experience.
+
 
 ## Features
 - **Fully Responsive Design** – Optimized for All Devices (Desktop, Tablet, Mobile).
