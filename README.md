@@ -1,55 +1,33 @@
 # **Temperature Converter Web**
-- **Temperature Converter** is a modern, responsive web application that allows users to easily convert temperatures between **Celsius** and **Fahrenheit**.  
-The app also features a **light/dark mode toggle**, **visual feedback messages based on temperature**, and **temperature-related images** for an enhanced user experience.
-
+- **Temperature Converter** is a Modern, Responsive Web Application that allows Users to easily Convert Temperatures between **Celsius** and **Fahrenheit**.  
+- **The Web App also features a **Light/Dark Mode toggle**, **Visual feedback messages based on Temperature** and **Temperature-related Images** for an enhanced User Experience.**
 
 ## Features
-- **Fully Responsive Design** – Optimized for All Devices (Desktop, Tablet, Mobile).
-- **Modern UI** – Clean and User-friendly Layout.
-- **Navigation Bar** – Quick access to main sections: About Us, Indoor, Outdoor, History.
-- **Hero Section** – Eye-catching Banner with a Call-to-Action Button.
-- **Services Section** – Cards Highlighting:
-  - About Us
-  - Indoor Sports/Clothing Store
-  - Outdoor Sports Activities
-  - Sports History
-- **Testimonials** – Feedback from Members.
-- **About Section** – Introduction and Mission of the Academy.
-- **Contact Form** – Easy way for Users to Connect.
-- **Social Media Links** – Facebook, Twitter, Instagram.
-- **Green Theme** – Sports-friendly and Refreshing Design.
+- **Two-Way Conversion** – Convert from Celsius to Fahrenheit and vice versa.
+- **Temperature Feedback** – Displays a custom message (e.g., “It’s pleasant!”) based on the temperature.
+- **Visual Slider Indicator** – Shows a graphical representation of temperature range.
+- **Temperature Units Info** – Explains both Celsius and Fahrenheit scales.
+- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile devices.
+- **Light/Dark Mode Toggle** – Switch between themes for better visibility and comfort.
+- **Temperature Visuals Section** – Images related to temperature and measurement tools.
 
 
 ## Tech Stack
 
-- **HTML5** – Markup Structure
-- **CSS3** – Styling and Layout (Custom fonts, Colors, Shadows)
-- **JavaScript (optional)**
-- **Google Fonts** – For typography
+- **HTML5** – Structure and Layout.
+- **CSS3** – Styling, Responsiveness and Themes.
+- **JavaScript (ES6)** – Conversion Logic, Interactivity and DOM Manipulation.
+- **Google Fonts** – Clean and Modern typography.
 
 ## Future Improvements
-- **Add Animations for Smooth User Interaction**.
-- **Integrate a backend for Storing Contact form Submissions**.
-- **Add a Blog Section for Sports news and Updates**.
-- **Include event Registration Functionality**.
+- **Add Kelvin conversion support.**
+- **Display real-time weather data from an API.**
+- **Add voice input for entering temperature.**
+- **Improve animations for smoother UI transitions.**
 
 ## Screenshots
 
-Below is a Preview of **NA-Sport-s-Academy-Website**, Showcasing the Layout and Styling implemented Using pure HTML , CSS and Javascript. 
+Below is a Preview of **Temperature-Converter-Web**, Showcasing the Layout and Styling implemented Using pure HTML , CSS and Javascript. 
 The Design focuses on Clean Structure, Responsiveness and Modern Styling.
 
-- **Home Page**
 <img src="Image-1/Screenshot-1.png" alt="NA-Sport-s-Academy-Website" width="100%" />
-
-- **Outdoor Page**
-<img src="Image-1/Screenshot-3.png" alt="NA-Sport-s-Academy-Website" width="100%" />
-
-- **Indoor Page**
-<img src="Image-1/Screenshot-2.png" alt="NA-Sport-s-Academy-Website" width="100%" />
-
-- **History Page**
-<img src="Image-1/Screenshot-5.png" alt="NA-Sport-s-Academy-Website" width="100%" />
-
-- **About Us Page**
-<img src="Image-1/Screenshot-4.png" alt="NA-Sport-s-Academy-Website" width="100%" />
-
