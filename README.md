@@ -30,4 +30,4 @@
 Below is a Preview of **Temperature-Converter-Web**, Showcasing the Layout and Styling implemented Using pure HTML , CSS and Javascript. 
 The Design focuses on Clean Structure, Responsiveness and Modern Styling.
 
-<img src="Image-1/Screenshot-1.png" alt="NA-Sport-s-Academy-Website" width="100%" />
+<img src="Image/Screenshot.png" alt="NA-Sport-s-Academy-Website" width="100%" />
