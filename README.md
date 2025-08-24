@@ -1,6 +1,6 @@
 # **Temperature Converter Web**
-- **Temperature Converter** is a Modern, Responsive Web Application that allows Users to easily Convert Temperatures between **Celsius** and **Fahrenheit**.  
-- **The Web App also features a **Light/Dark Mode toggle**, **Visual feedback messages based on Temperature** and **Temperature-related Images** for an enhanced User Experience.**
+**Temperature Converter** is a Modern, Responsive Web Application that allows Users to easily Convert Temperatures between **Celsius** and **Fahrenheit**.  
+**The Web App also features a **Light/Dark Mode toggle**, **Visual feedback messages based on Temperature** and **Temperature-related Images** for an enhanced User Experience.**
 
 ## Features
 - **Two-Way Conversion** – Convert from Celsius to Fahrenheit and vice versa.
